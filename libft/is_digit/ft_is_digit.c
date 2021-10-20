@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_is_digit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/18 17:23:28 by dateixei          #+#    #+#             */
-/*   Updated: 2021/10/18 18:31:36 by dateixei         ###   ########.fr       */
+/*   Created: 2021/10/18 16:53:05 by dateixei          #+#    #+#             */
+/*   Updated: 2021/10/18 16:57:53 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// Return 0 if the char isn't alphamumeric and 1 if is.
-int	ft_isalnum(int	c) {
-	if((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9')) {
-		return 1;
+int	ft_is_digit(int	c)
+{
+    if ((c >= '0' && c <= '9')) {
+		return (1);
 	} else
-		return 0;
+	    return (0);
 }
