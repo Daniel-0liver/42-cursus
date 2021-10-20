@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// Retur
+// Return 0 if the char isn't alphamumeric and 1 if is.
 int	ft_isalnum(int	c) {
 	if((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9')) {
 		return 1;
