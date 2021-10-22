@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_alpha.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/18 15:47:53 by dateixei          #+#    #+#             */
-/*   Updated: 2021/10/18 16:51:35 by dateixei         ###   ########.fr       */
+/*   Created: 2021/10/22 22:45:39 by dateixei          #+#    #+#             */
+/*   Updated: 2021/10/22 22:45:39 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-int	ft_is_alpha(int c)
-{
-    
-    if (((c >= 'A' && c <= 'Z') || (
-					c >= 'a' && c <= 'z'))) {
-		return (1);
-	} else
-	    return (0);
+int main(void) {
+    test(2);
+    printf("Teste ft_is_alpha, %d", ft_is_alpha(49));
+    return 0;
 }
