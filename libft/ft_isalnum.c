@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_ascii.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/20 01:22:44 by dateixei          #+#    #+#             */
-/*   Updated: 2021/10/20 01:22:44 by dateixei         ###   ########.fr       */
+/*   Created: 2021/10/18 17:23:28 by dateixei          #+#    #+#             */
+/*   Updated: 2021/10/18 18:31:36 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_is_ascii(int    c) {
-    if ((c >= 0 && c <= 127)) {
-		return (1);
+#include "libft.h"
+
+// Return 0 if the char isn't alphamumeric and 1 if is.
+int	ft_isalnum(int	c) {
+	if((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9')) {
+		return 1;
 	} else
-	    return (0);
+		return 0;
 }
