@@ -1,22 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/18 15:47:53 by dateixei          #+#    #+#             */
-/*   Updated: 2021/10/18 16:51:35 by dateixei         ###   ########.fr       */
+/*   Created: 2021/11/16 02:13:12 by dateixei          #+#    #+#             */
+/*   Updated: 2021/11/16 02:13:12 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+// #include <string.h>
+// #include <stdio.h>
 
-int	ft_isalpha(int c)
-{
-    if (((c >= 'A' && c <= 'Z') || (
-					c >= 'a' && c <= 'z'))) {
-		return (1);
-	} else
-	    return (0);
+unsigned int    ft_strlen(const char	*str) {
+    unsigned int	size;
+
+	size = 0;
+	while (str[size])
+		size++;
+	return size;
 }
+
+// int main(void) {
+
+// 	char *str = {"abcde"};
+
+// 	printf("%d\n", strlen(str));
+// 	printf("%d\n", ft_strlen(str));
+
+// 	return 0;
+// }
