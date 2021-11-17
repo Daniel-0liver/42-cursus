@@ -12,9 +12,24 @@
 
 #include "libft.h"
 #include <stdio.h>
+#include <string.h>
 
 int main(void) {
-    test(2);
-    printf("Teste ft_is_alpha, %d", ft_is_alpha(49));
+    char test[50] = {"testando"};
+    char test2[50] = {"testando"};
+    memset(test + 2, '*', 2);
+    ft_memset(test2 + 2, '*', 2);
+    printf("Teste ft_memset, %s\n", test);
+    printf("Teste ft_memset2, %s\n", test2);
     return 0;
 }
+
+// int main()
+// {
+//     char str[50] = "Aticleworld is a programming Blog.";
+//     printf("\nBefore memset(): %s\n\n", str);
+//     // Fill 6 characters starting from str[11] with '*'
+//     memset(str + 11, '*', 6);
+//     printf("After memset(): %s\n\n", str);
+//     return 0;
+// }
