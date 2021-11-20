@@ -1,34 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/17 13:37:47 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/17 13:37:47 by dateixei         ###   ########.fr       */
+/*   Created: 2021/11/19 23:24:40 by dateixei          #+#    #+#             */
+/*   Updated: 2021/11/19 23:24:40 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memset(void *s, int c, size_t n) {
-    char *t;
-
-    t = s;
-    while (n--)
-    {
-        *t++ = (char)c;
-    }
-	return s;
+void bzero(void *s, size_t n) {
+	
 }
-
-// int main(void) {
-//     char test[50] = {"testando"};
-//     char test2[50] = {"testando"};
-//     memset(test + 2, '*', 2);
-//     ft_memset(test2 + 2, '*', 2);
-//     printf("Teste ft_memset, %s\n", test);
-//     printf("Teste ft_memset2, %s\n", test2);
-//     return 0;
-// }

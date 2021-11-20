@@ -11,7 +11,8 @@ $(NAME) : $(SRC)
 	@ar rc $(NAME) $(OBJ)
 
 clean:
-	@rm -f $(OBJ)
+	@rm -f $(OBJ) 
+	@rm -f *.exe
 
 fclean: clean
 	@rm -f $(NAME)

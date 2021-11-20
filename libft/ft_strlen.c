@@ -14,8 +14,8 @@
 // #include <string.h>
 // #include <stdio.h>
 
-unsigned int    ft_strlen(const char	*str) {
-    unsigned int	size;
+size_t	ft_strlen(const char	*str) {
+    size_t	size;
 
 	size = 0;
 	while (str[size])

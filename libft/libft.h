@@ -1,17 +1,22 @@
 #ifndef LIBFT_H
 #define LIBFT_H
 
+#include <string.h>
+#include <stdio.h>
+
 // Is functions
 int	ft_isalpha(int);
 int	ft_isalnum(int);
 int ft_isascii(int);
 int	ft_isdigit(int);
 int ft_isascii(int);
+int ft_isprint(int);
 
 // Memory Functions
-void *ft_memset(void*, int, unsigned int);
+void *ft_memset(void*, int, size_t);
+void bzero(void*, size_t);
 
 // String manipulation funcios
-unsigned int    ft_strlen(const char*);
+size_t ft_strlen(const char*);
 
 #endif
