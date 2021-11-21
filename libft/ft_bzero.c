@@ -11,7 +11,18 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <strings.h>
+#include <stdio.h>
+#include <string.h>
 
-void bzero(void *s, size_t n) {
-	
+void	ft_bzero(void *s, size_t n) {
+	ft_memset(s, 0, n);
 }
+
+// int main() {
+// 	char *test = {"testando"};
+// 	printf("%s\n", test);
+// 	ft_bzero(test, 2);
+// 	printf("%s\n", test);
+// 	return 0;
+// }
