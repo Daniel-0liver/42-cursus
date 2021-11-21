@@ -2,6 +2,8 @@
 #define LIBFT_H
 
 #include <string.h>
+#include <unistd.h>
+#include <stdlib.h>
 #include <stdio.h>
 
 // Is functions
@@ -20,5 +22,6 @@ void *ft_memmove(void*, const void*, size_t);
 
 // String manipulation funcios
 size_t ft_strlen(const char*);
+size_t ft_strlcpy(char*, const char*, size_t);
 
 #endif

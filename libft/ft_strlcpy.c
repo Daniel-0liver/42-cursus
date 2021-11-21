@@ -1,42 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/21 13:35:47 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/21 13:35:47 by dateixei         ###   ########.fr       */
+/*   Created: 2021/11/21 20:29:56 by dateixei          #+#    #+#             */
+/*   Updated: 2021/11/21 20:29:56 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memcpy(void *dest, const void *src, size_t n) {
-	size_t i;
-	char	*tmp_dest;
-	char	*tmp_src;
+size_t ft_strlcpy(char *dst, const char *src, size_t size) {
+	size_t	i;
 
+	if(size == 0)
+		return (ft_strlen(src));
 	i = 0;
-	tmp_dest = (char *)dest;
-	tmp_src = (char *)src;
-	while (i < n)
+	while (i < size - 1 && src[i])
 	{
-		tmp_dest[i] = tmp_src[i];
+		dst[i] = src[i];
 		i++;
 	}
-	return dest;
+	dst[i] = '\0';
+	return (ft_strlen(src));
 }
-
 // int main() {
 // 	char test[] = "testing";
-// 	char *ori = "testing";
-	
-// 	char *testcpy = ft_memcpy(testcpy, test, 5);
-// 	// char *orig = memcpy(orig, ori, 5);
+// 	char testcpy[100];
+// 	size_t i = ft_strlcpy(testcpy, test, 3);
 
-// 	printf("Original: %s, copy: %s, \n", test, testcpy);
-// 	// printf("Original: %s, copy: %s, \n", ori, orig);
-
-// 	return 0;
+// 	printf("%s\n%s\n", test, testcpy);
+// 	printf("%ld\n", i);
 // }
