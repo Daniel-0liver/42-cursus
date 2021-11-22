@@ -20,8 +20,10 @@ void ft_bzero(void*, size_t);
 void *ft_memcpy(void*, const void*, size_t);
 void *ft_memmove(void*, const void*, size_t);
 
+
 // String manipulation funcios
 size_t ft_strlen(const char*);
 size_t ft_strlcpy(char*, const char*, size_t);
+size_t ft_strlcat(char*, const char*, size_t);
 
 #endif
