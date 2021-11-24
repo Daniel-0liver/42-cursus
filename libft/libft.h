@@ -22,6 +22,7 @@ void *ft_memcpy(void*, const void*, size_t);
 void *ft_memmove(void*, const void*, size_t);
 void *ft_memchr(const void*, int, size_t);
 int ft_memcmp(const void*, const void*, size_t);
+void *ft_calloc(size_t, size_t);
 
 
 // String manipulation funcios
@@ -34,5 +35,7 @@ char *ft_strchr(const char*, int);
 char *ft_strrchr(const char*, int);
 int ft_strncmp(const char*, const char*, size_t);
 char *ft_strnstr(const char *, const char*, size_t);
+int	ft_atoi(const char*);
+
 
 #endif
