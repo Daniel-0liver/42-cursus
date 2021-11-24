@@ -33,5 +33,6 @@ int ft_tolower(int);
 char *ft_strchr(const char*, int);
 char *ft_strrchr(const char*, int);
 int ft_strncmp(const char*, const char*, size_t);
+char *ft_strnstr(const char *, const char*, size_t);
 
 #endif
