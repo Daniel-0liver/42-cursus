@@ -20,6 +20,7 @@ void *ft_memset(void*, int, size_t);
 void ft_bzero(void*, size_t);
 void *ft_memcpy(void*, const void*, size_t);
 void *ft_memmove(void*, const void*, size_t);
+void *ft_memchr(const void*, int, size_t);
 
 
 // String manipulation funcios
