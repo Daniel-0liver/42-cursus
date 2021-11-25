@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
+// Part I
 // Is functions
 int	ft_isalpha(int);
 int	ft_isalnum(int);
@@ -25,7 +26,6 @@ int ft_memcmp(const void*, const void*, size_t);
 void *ft_calloc(size_t, size_t);
 char *ft_strdup(const char*);
 
-
 // String manipulation funcios
 size_t ft_strlen(const char*);
 size_t ft_strlcpy(char*, const char*, size_t);
@@ -38,5 +38,7 @@ int ft_strncmp(const char*, const char*, size_t);
 char *ft_strnstr(const char *, const char*, size_t);
 int	ft_atoi(const char*);
 
+// Part II
+char *ft_substr(char const*, unsigned int, size_t);
 
 #endif
