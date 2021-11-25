@@ -23,6 +23,7 @@ void *ft_memmove(void*, const void*, size_t);
 void *ft_memchr(const void*, int, size_t);
 int ft_memcmp(const void*, const void*, size_t);
 void *ft_calloc(size_t, size_t);
+char *ft_strdup(const char*);
 
 
 // String manipulation funcios
