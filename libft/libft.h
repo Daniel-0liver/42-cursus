@@ -41,5 +41,6 @@ int	ft_atoi(const char*);
 // Part II
 char *ft_substr(char const*, unsigned int, size_t);
 char *ft_strjoin(char const*, char const*);
+char *ft_strtrim(char const*, char const*);
 
 #endif
