@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 14:20:35 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/28 14:39:51 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/11/28 18:40:59 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 // Part I
 // Is functions
 int		ft_isalnum(int c);
-int		ft_isascii(int c);
+int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);

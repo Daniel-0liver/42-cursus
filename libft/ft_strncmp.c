@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 02:58:29 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/28 14:01:02 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/11/28 19:30:14 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	while (n > i && (s1[i] || s2[i]))
 	{
 		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 		i++;
 	}
 	return (0);
