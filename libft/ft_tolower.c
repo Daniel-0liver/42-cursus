@@ -6,14 +6,15 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 02:02:19 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/22 02:02:19 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:19:19 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c) {
-	if(c >= 'A' && c <= 'Z')
+int	ft_tolower(int c)
+{
+	if (c >= 'A' && c <= 'Z')
 		c += 32;
-	return c;
+	return (c);
 }

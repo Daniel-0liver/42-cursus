@@ -6,13 +6,14 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 00:20:24 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/23 00:20:24 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:15:51 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c) {
+char	*ft_strrchr(const char *s, int c)
+{
 	char	tmp_c;
 	int		size_s;
 
@@ -22,12 +23,12 @@ char *ft_strrchr(const char *s, int c) {
 		s++;
 	while (size_s > 0)
 	{
-		if(*s == tmp_c)
+		if (*s == tmp_c)
 			return ((char *)s);
 		s--;
 		size_s--;
 	}
-	if(*s == tmp_c)
+	if (*s == tmp_c)
 		return ((char *)s);
 	return ((void *)0);
 }

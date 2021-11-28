@@ -1,46 +1,57 @@
-#ifndef LIBFT_H
-#define LIBFT_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/28 14:20:35 by dateixei          #+#    #+#             */
+/*   Updated: 2021/11/28 14:39:51 by dateixei         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <string.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <ctype.h>
+#ifndef LIBFT_H
+# define LIBFT_H
+
+# include <string.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <stdio.h>
+# include <ctype.h>
 
 // Part I
 // Is functions
-int	ft_isalpha(int);
-int	ft_isalnum(int);
-int ft_isascii(int);
-int	ft_isdigit(int);
-int ft_isascii(int);
-int ft_isprint(int);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isdigit(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
 
 // Memory Functions
-void *ft_memset(void*, int, size_t);
-void ft_bzero(void*, size_t);
-void *ft_memcpy(void*, const void*, size_t);
-void *ft_memmove(void*, const void*, size_t);
-void *ft_memchr(const void*, int, size_t);
-int ft_memcmp(const void*, const void*, size_t);
-void *ft_calloc(size_t, size_t);
-char *ft_strdup(const char*);
+void	*ft_memset(void *s, int c, size_t n);
+void	ft_bzero(void *s, size_t n);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
+void	*ft_memmove(void *dest, const void *src, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_strdup(const char *s);
 
-// String manipulation funcios
-size_t ft_strlen(const char*);
-size_t ft_strlcpy(char*, const char*, size_t);
-size_t ft_strlcat(char*, const char*, size_t);
-int ft_toupper(int);
-int ft_tolower(int);
-char *ft_strchr(const char*, int);
-char *ft_strrchr(const char*, int);
-int ft_strncmp(const char*, const char*, size_t);
-char *ft_strnstr(const char *, const char*, size_t);
-int	ft_atoi(const char*);
+// String manipulation functions
+size_t	ft_strlen(const char *s);
+size_t	ft_strlcpy(char *dest, const char *src, size_t size);
+size_t	ft_strlcat(char *dest, const char *src, size_t size);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+char	*ft_strnstr(const char *s1, const char *s2, size_t n);
+int		ft_atoi(const char *nptr);
 
 // Part II
-char *ft_substr(char const*, unsigned int, size_t);
-char *ft_strjoin(char const*, char const*);
-char *ft_strtrim(char const*, char const*);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 
 #endif

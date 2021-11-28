@@ -6,14 +6,15 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 01:51:47 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/22 01:51:47 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:19:57 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c) {
+int	ft_toupper(int c)
+{
 	if (c >= 'a' && c <= 'z')
 		c -= 32;
-	return c;
+	return (c);
 }

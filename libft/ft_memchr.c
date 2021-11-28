@@ -6,13 +6,14 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 03:34:45 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/24 03:34:45 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:09:40 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memchr(const void *s, int c, size_t n) {
+void	*ft_memchr(const void *s, int c, size_t n)
+{
 	size_t	i;
 
 	i = 0;
@@ -24,7 +25,7 @@ void *ft_memchr(const void *s, int c, size_t n) {
 		}
 		i++;
 	}
-	return 0;
+	return (0);
 }
 
 // int main() {

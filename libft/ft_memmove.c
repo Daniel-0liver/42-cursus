@@ -6,13 +6,14 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 15:50:30 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/21 15:50:30 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:11:18 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len) {
+void	*ft_memmove(void *dst, const void *src, size_t len)
+{
 	char	*tmp_dst;
 	char	*tmp_src;
 
@@ -32,8 +33,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len) {
 
 // int main() {
 // 	// char *test = "testing";
-// 	char *ori = "testing another";
-	
+// 	char *ori = "testing another";	
 // 	// char *testcpy = ft_memcpy(testcpy, test, 5);
 // 	memmove("orig", ori, 2);
 

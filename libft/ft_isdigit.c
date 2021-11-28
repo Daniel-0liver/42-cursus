@@ -6,16 +6,18 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 16:53:05 by dateixei          #+#    #+#             */
-/*   Updated: 2021/10/18 16:57:53 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:08:31 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int	c)
+int	ft_isdigit(int c)
 {
-    if ((c >= '0' && c <= '9')) {
+	if ((c >= '0' && c <= '9'))
+	{
 		return (1);
-	} else
-	    return (0);
+	}
+	else
+		return (0);
 }

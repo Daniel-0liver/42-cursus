@@ -6,13 +6,14 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 17:01:41 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/24 17:01:41 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:03:04 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_atoi(const char *nptr) {
+int	ft_atoi(const char *nptr)
+{
 	int	i;
 	int	result;
 	int	sing;
@@ -20,15 +21,15 @@ int ft_atoi(const char *nptr) {
 	i = 0;
 	sing = 1;
 	result = 0;
-	while(nptr[i] && (nptr[i] == '\f' || nptr[i] == ' ' || nptr[i] == '\n' || 
-			nptr[i] == '\r' || nptr[i] == '\t' || nptr[i] == '\v'))
+	while (nptr[i] && (nptr[i] == '\f' || nptr[i] == ' ' || nptr[i] == '\n'
+			|| nptr[i] == '\r' || nptr[i] == '\t' || nptr[i] == '\v'))
 		i++;
-	if(nptr[i] && (nptr[i] == '-' || nptr[i] == '+')) {
-		if(nptr[i] == '-')
+	if (nptr[i] && (nptr[i] == '-' || nptr[i] == '+'))
+	{
+		if (nptr[i] == '-')
 			sing *= -1;
 		i++;
 	}
-
 	while (nptr[i] && (nptr[i] >= '0' && nptr[i] <= '9'))
 	{
 		result = result * 10 + (nptr[i] - '0');

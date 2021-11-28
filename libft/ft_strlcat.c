@@ -6,17 +6,18 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 22:16:32 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/21 22:16:32 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:14:18 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size) {
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
+{
 	size_t	i;
 
 	i = 0;
-	while(dst[i] && i < size)
+	while (dst[i] && i < size)
 		i++;
 	while (*src && i + 1 < size)
 	{

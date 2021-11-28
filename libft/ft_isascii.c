@@ -6,15 +6,18 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/20 01:22:44 by dateixei          #+#    #+#             */
-/*   Updated: 2021/10/20 01:22:44 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:07:56 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int    c) {
-    if ((c >= 0 && c <= 127)) {
+int	ft_isascii(int c)
+{
+	if ((c >= 0 && c <= 127))
+	{
 		return (1);
-	} else
-	    return (0);
+	}
+	else
+		return (0);
 }

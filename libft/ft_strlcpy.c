@@ -6,16 +6,17 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 20:29:56 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/21 20:29:56 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:14:41 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlcpy(char *dst, const char *src, size_t size) {
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+{
 	size_t	i;
 
-	if(size == 0)
+	if (size == 0)
 		return (ft_strlen(src));
 	i = 0;
 	while (i < size - 1 && src[i])

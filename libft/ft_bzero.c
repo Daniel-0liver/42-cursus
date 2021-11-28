@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 23:24:40 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/19 23:24:40 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:03:31 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 #include <stdio.h>
 #include <string.h>
 
-void	ft_bzero(void *s, size_t n) {
+void	ft_bzero(void *s, size_t n)
+{
 	ft_memset(s, 0, n);
 }
 

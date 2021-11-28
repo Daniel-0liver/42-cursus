@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 02:13:12 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/16 02:13:12 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/11/28 14:15:10 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,14 @@
 // #include <string.h>
 // #include <stdio.h>
 
-size_t	ft_strlen(const char	*str) {
-    size_t	size;
+size_t	ft_strlen(const char	*str)
+{
+	size_t	size;
 
 	size = 0;
 	while (str[size])
 		size++;
-	return size;
+	return (size);
 }
 
 // int main(void) {
