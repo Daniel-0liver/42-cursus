@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 13:16:20 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/28 14:15:33 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/11/28 20:37:23 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,10 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 	i = 0;
 	if (!*s2)
 		return ((char *)s1);
-	while (i < n && s1[i] != '\0')
+	j = ft_strlen(s2);
+	while (i + j <= n && s1[i])
 	{
-		while (i + j < n && s1[i + j] == s2[j])
-			j++;
-		if (s2[j] == '\0')
+		if (!ft_strncmp(s1 + i, s2, j))
 			return ((char *)s1 + i);
 		i++;
 	}
