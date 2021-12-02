@@ -6,11 +6,15 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 23:54:48 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/28 14:16:46 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/02 01:44:59 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Allocates (with malloc(3)) and returns a copy of
+// ’s1’ with the characters specified in ’set’ removed
+// from the beginning and the end of the string.
 
 int	contain_checker(const char *set, char c)
 {

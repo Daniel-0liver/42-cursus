@@ -6,11 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 14:20:35 by dateixei          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2021/11/28 18:40:59 by dateixei         ###   ########.fr       */
-=======
-/*   Updated: 2021/11/28 14:58:29 by dateixei         ###   ########.fr       */
->>>>>>> 90e5e54 (updates)
+/*   Updated: 2021/12/01 20:45:19 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,5 +53,6 @@ int		ft_atoi(const char *nptr);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
 
 #endif
