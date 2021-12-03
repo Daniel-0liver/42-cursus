@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 20:45:54 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/02 03:27:37 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/03 00:26:32 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ static char	**free_split(char **split)
 	while (split[i])
 		free(split[i++]);
 	free(split);
+	*split = NULL;
 	return (NULL);
 }
 
