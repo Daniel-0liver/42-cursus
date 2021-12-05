@@ -13,7 +13,8 @@ ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
 OBJ = $(SRC:.c=.o)
 
-BONUS_SRC = ft_lstnew.c
+BONUS_SRC = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
+
 
 BONUS_OBJ = $(BONUS_SRC:.c=.o)
 
