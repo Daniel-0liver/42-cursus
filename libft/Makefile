@@ -9,21 +9,28 @@ ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c \
 ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c \
 ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c \
 ft_strmapi.c ft_striteri.c ft_putchar_fd.c \
-ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
-
+ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
 OBJ = $(SRC:.c=.o)
+
+BONUS_SRC = ft_lstnew.c
+
+BONUS_OBJ = $(BONUS_SRC:.c=.o)
 
 all: $(NAME)
 
 $(NAME) : $(SRC) 
 	@$(CC) $(FLAGS) -c $(SRC)
-	@ar rc $(NAME) $(OBJ)
+	@ar -rcs $(NAME) $(OBJ)
+
+bonus:$(BONUS_OBJ) $(OBJ)
+	@$(CC) $(FLAGS) -c $(SRC)
+	@ar -rcs $(NAME) $(BONUS_OBJ) $(OBJ)
 
 clean:
-	@rm -f $(OBJ)
+	@rm -f $(OBJ) $(BONUS_OBJ)
 
 fclean: clean
-	@rm -f $(NAME)
+	@rm -f $(NAME)	
 
 re: fclean all
