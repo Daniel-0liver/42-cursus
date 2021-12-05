@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/05 17:03:42 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/05 17:49:19 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/05 17:56:32 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;
-	
+
 	i = 0;
 	while (s[i])
 	{

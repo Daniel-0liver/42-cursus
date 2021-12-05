@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/05 17:10:35 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/05 17:49:35 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/05 17:56:20 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 void	ft_putendl_fd(char *s, int fd)
 {
 	size_t	i;
-	
+
 	if (!s)
 		return ;
 	i = 0;

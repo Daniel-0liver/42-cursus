@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/05 15:05:36 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/05 16:54:17 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/05 17:55:44 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
-	
+
 	if (!s)
 		return ;
 	i = 0;
