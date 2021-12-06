@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 13:35:47 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/28 14:11:00 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/06 03:38:33 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,13 @@
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t	i;
-	char	*tmp_dest;
-	char	*tmp_src;
 
+	if (!dest && !src)
+		return (NULL);
 	i = 0;
-	tmp_dest = (char *)dest;
-	tmp_src = (char *)src;
 	while (i < n)
 	{
-		tmp_dest[i] = tmp_src[i];
+		*((char *)(dest + i)) = *((char *)(src + i));
 		i++;
 	}
 	return (dest);

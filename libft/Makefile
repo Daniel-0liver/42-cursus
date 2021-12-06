@@ -14,7 +14,13 @@ ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 OBJ = $(SRC:.c=.o)
 
 BONUS_SRC = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
-ft_lstlast.c ft_lstadd_back.c
+ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c \
+ft_lstiter.c ft_lstmap.c
+
+# The rule so is just for tests.
+#so:
+#	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
+#	gcc -nostartfiles -shared -o libft.so $(OBJ)
 
 BONUS_OBJ = $(BONUS_SRC:.c=.o)
 

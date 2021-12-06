@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 23:54:48 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/02 01:44:59 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/06 03:26:54 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!(start_copy - size_s1))
 		return (ft_strdup(""));
 	s1_copy = (char *)malloc(((size_copy - start_copy) + 2) * sizeof(char));
+	if (!s1_copy)
+		return (NULL);
 	size_s1 = 0;
 	while (start_copy <= size_copy)
 		s1_copy[size_s1++] = s1[start_copy++];

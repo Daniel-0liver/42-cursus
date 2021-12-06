@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/05 17:03:42 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/06 03:29:50 by dateixei         ###   ########.fr       */
+/*   Created: 2021/12/06 02:23:02 by dateixei          #+#    #+#             */
+/*   Updated: 2021/12/06 02:27:56 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Outputs the string ’s’ to the given file
-// descriptor.
+// Iterates the list ’lst’ and applies the function
+// ’f’ to the content of each element.
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	size_t	i;
-
-	if (!s)
+	if (!f)
 		return ;
-	i = 0;
-	while (s[i])
+	while (lst)
 	{
-		if (!s)
-			return ;
-		write(fd, &s[i], 1);
-		i++;
+		f(lst->content);
+		lst = lst->next;
 	}
 }

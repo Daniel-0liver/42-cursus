@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 20:45:54 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/04 01:00:44 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/06 03:30:52 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,8 @@ char	**ft_split(char const *s, char c)
 	size_t	i;
 	size_t	j;
 
+	if (!s)
+		return (NULL);
 	split = (char **) malloc((get_size_array(s, c) + 1) * sizeof(char *));
 	i = 0;
 	if (!split)
