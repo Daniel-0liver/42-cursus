@@ -6,14 +6,13 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/05 19:55:23 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/05 20:32:24 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/07 01:21:15 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Adds the element ’new’ at the beginning of the
-// list.
+// Adds the element ’new’ at the beginning of the list.
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

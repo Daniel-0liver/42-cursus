@@ -6,11 +6,14 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 00:20:24 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/28 14:15:51 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/07 01:33:39 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// The strrchr() function returns a pointer to the last occurrence of 
+// the character c in the string s.
 
 char	*ft_strrchr(const char *s, int c)
 {

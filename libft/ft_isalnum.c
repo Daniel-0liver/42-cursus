@@ -6,13 +6,14 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 17:23:28 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/06 03:10:21 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/07 01:15:45 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 // Return 0 if the char isn't alphamumeric and 1 if is.
+
 int	ft_isalnum(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c

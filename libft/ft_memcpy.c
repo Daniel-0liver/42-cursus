@@ -6,11 +6,14 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 13:35:47 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/06 03:38:33 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/07 01:24:56 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// The  memcpy()  function  copies  n  bytes from memory area src to
+// memory area dest. The memory areas must not overlap.
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

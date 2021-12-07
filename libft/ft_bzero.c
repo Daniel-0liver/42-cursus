@@ -6,14 +6,15 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 23:24:40 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/28 14:03:31 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/07 01:12:46 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <strings.h>
-#include <stdio.h>
-#include <string.h>
+
+// The bzero() function erases the data in the n bytes of the 
+// memory starting at the location pointed to by s, by
+// writing zeros (bytes containing '\0') to that area.
 
 void	ft_bzero(void *s, size_t n)
 {

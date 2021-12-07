@@ -6,11 +6,14 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 17:01:41 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/06 03:37:50 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/07 01:11:49 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// The atoi() function converts the initial portion of 
+// the string pointed to by nptr to int.
 
 int	ft_atoi(const char *nptr)
 {

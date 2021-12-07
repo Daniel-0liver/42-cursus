@@ -6,11 +6,14 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 20:29:56 by dateixei          #+#    #+#             */
-/*   Updated: 2021/11/28 14:14:41 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/07 01:29:55 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// The strlcpy() function copies up to size - 1 characters from the 
+// NUL-terminated string src to dst, NUL-terminat‐ ing the result.
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

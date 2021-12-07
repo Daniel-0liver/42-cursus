@@ -6,11 +6,13 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/05 23:18:53 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/05 23:33:18 by dateixei         ###   ########.fr       */
+/*   Updated: 2021/12/07 01:20:59 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Adds the element ’new’ at the end of the list.
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
