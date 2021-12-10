@@ -20,9 +20,9 @@ ft_lstiter.c ft_lstmap.c
 BONUS_OBJ = $(BONUS_SRC:.c=.o)
 
 # The rule so is just for tests.
-#so:
-#	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
-#	gcc -nostartfiles -shared -o libft.so $(OBJ)
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
+	gcc -nostartfiles -shared -o libft.so $(OBJ)
 
 all: $(NAME)
 
