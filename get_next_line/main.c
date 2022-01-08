@@ -1,5 +1,4 @@
 #include "get_next_line.h"
-// #define BUF_SIZE 1
 #include <stdio.h>
 #include <fcntl.h>
 
@@ -10,12 +9,18 @@ int main(int argc, char **argv) {
 	}
 	
 	int fd;
-	char *get;
+	int ret;
+	int i;
+	char buff[BUFFER_SIZE + 1];
+
 	fd = open(argv[1], O_RDONLY);
-	while ((get = get_next_line(fd)))
-	{
-		printf("%s", get);
-	}
+	i = 0;
+	ret = read(fd, buff, BUFFER_SIZE);
+	// while (buff[i])
+	// 	while (buff[i] != '\n')
+	// 		i++;
+	buff[ret] = '\0';
+	printf("%s\n%d", buff, ret);
 	close(fd);
 	return (1);
 }
