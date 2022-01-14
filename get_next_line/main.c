@@ -13,13 +13,11 @@ int main(int argc, char **argv) {
 	// int i;
 	// char buff[BUFFER_SIZE + 1];
 	char *get;
-	int i = 0;
+
 	fd = open(argv[1], O_RDONLY);
-	while (i <= 20)
+	while (get = get_next_line(fd))
 	{
-		get = get_next_line(fd);
 		printf("%s", get);
-		i++;
 	}
 	// i = 0;
 	// ret = read(fd, buff, BUFFER_SIZE);
