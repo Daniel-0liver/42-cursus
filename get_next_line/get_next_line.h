@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 01:34:53 by dateixei          #+#    #+#             */
-/*   Updated: 2022/01/14 01:03:39 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/01/14 03:20:20 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,7 @@
 # include <stdio.h>
 
 char	*get_next_line(int fd);
+char	*ft_strjoin(const char *s1, const char *s2);
+size_t	ft_strlen(const char *str);
 
 #endif
