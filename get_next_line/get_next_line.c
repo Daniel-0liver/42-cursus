@@ -32,7 +32,7 @@ char	*ft_read_file(int	fd, char	*buffer)
 	
 	if (!buffer) // If buffer == NULL malloc it
 		buffer = ft_calloc(1, 1);
-	buffer_read = calloc(BUFFER_SIZE + 1, sizeof(char));
+	buffer_read = ft_calloc(BUFFER_SIZE + 1, sizeof(char));
 	bytes_read = 1; // Init with 1 to enter the while
 	while (bytes_read > 0)
 	{
@@ -58,7 +58,7 @@ char	*ft_read_file(int	fd, char	*buffer)
 
 char	*ft_line(char	*buffer)
 {
-	char	*line;
+	char	*line; 
 	int		i;
 
 	i = 0;
