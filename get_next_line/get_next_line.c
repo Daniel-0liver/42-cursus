@@ -103,9 +103,10 @@ char	*ft_next_line(char	*buffer)
 
 char	*get_next_line(int fd) 
 {
-	static char	*buffer;
-	char		*line;
+	static char	*buffer; //Buffer to keep
+	char		*line; //Line to return
 
+	//Basic check
 	if (fd < 0 || read(fd, 0, 0) < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	buffer = ft_read_file(fd, buffer);
