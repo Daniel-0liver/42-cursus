@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 00:49:12 by dateixei          #+#    #+#             */
-/*   Updated: 2022/02/24 01:28:55 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/02/28 23:46:33 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ char	*get_next_line(int fd)
 	//Basic check
 	if (fd < 0 || read(fd, 0, 0) < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	
+	small uptdate.
 	
 }
