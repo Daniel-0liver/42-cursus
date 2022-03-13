@@ -63,7 +63,7 @@ char	*ft_line(char	*buffer)
 
 	i = 0;
 	if (!buffer[i])
-		return(NULL);
+		return (NULL);
 	while (buffer[i] && buffer[i] != '\n')
 		i++;
 	line = calloc(i + 2, sizeof(char));
