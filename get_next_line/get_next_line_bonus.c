@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 00:49:12 by dateixei          #+#    #+#             */
-/*   Updated: 2022/03/13 19:49:19 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/03/15 23:27:24 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,3 +107,4 @@ char	*get_next_line(int fd)
 	buffer = ft_next_line(buffer);
 	return (line);
 }
+some updades
