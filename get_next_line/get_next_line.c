@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                     :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 01:33:56 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/09 01:33:57 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/03/16 00:23:35 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,30 +25,25 @@ char	*ft_join_and_free(char	*buffer, char	*buffer_read)
 
 // This function will read the file until the eol or eof
 // and return the line allocated in the buffer.
-char	*ft_read_file(int	fd, char	*buffer)
+char	*ft_read_file(int fd, char *buffer)
 {
-	char	*buffer_read; // Will keep the string read
-	int		bytes_read; // The amount of bytes read
-	
-	if (!buffer) // If buffer == NULL malloc it
+	char	*buffer_read;
+	int		bytes_read;
+
+	if (!buffer)
 		buffer = ft_calloc(1, 1);
 	buffer_read = ft_calloc(BUFFER_SIZE + 1, sizeof(char));
-	bytes_read = 1; // Init with 1 to enter the while
+	bytes_read = 1;
 	while (bytes_read > 0)
 	{
 		bytes_read = read(fd, buffer_read, BUFFER_SIZE);
-		// If find some error when read, free the buffer and return NULL
 		if (bytes_read == -1)
 		{
 			free(buffer_read);
 			return (NULL);
 		}
-		// eol
 		buffer_read[bytes_read] = 0;
-		// Join the buffer with buffer_read, free the memory of buffer
-		// and return the result.
 		buffer = ft_join_and_free(buffer, buffer_read);
-		// Break if find \n
 		if (ft_strchr(buffer_read, '\n'))
 			break ;
 	}
@@ -58,7 +53,7 @@ char	*ft_read_file(int	fd, char	*buffer)
 
 char	*ft_line(char	*buffer)
 {
-	char	*line; 
+	char	*line;
 	int		i;
 
 	i = 0;
@@ -101,12 +96,11 @@ char	*ft_next_line(char	*buffer)
 	return (buffer_line);
 }
 
-char	*get_next_line(int fd) 
+char	*get_next_line(int fd)
 {
-	static char	*buffer; //Buffer to keep
-	char		*line; //Line to return
+	static char	*buffer;
+	char		*line;
 
-	//Basic check
 	if (fd < 0 || read(fd, 0, 0) < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	buffer = ft_read_file(fd, buffer);

@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 00:49:21 by dateixei          #+#    #+#             */
-/*   Updated: 2022/03/13 19:47:12 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/03/16 00:10:05 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_calloc(size_t sizeOne, size_t sizeTwo)
 	char	*str;
 	void	*str_return;
 	int		full_size;
-	
+
 	full_size = sizeOne * sizeTwo;
 	str_return = malloc(full_size);
 	str = str_return;
@@ -47,7 +47,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 
 	size = ft_strlen(s1) + ft_strlen(s2);
 	join = (char *)malloc((size + 1) * sizeof(char));
-	if(!s1 || !s2 || !join)
+	if (!s1 || !s2 || !join)
 		return (NULL);
 	i = 0;
 	while (s1[i])

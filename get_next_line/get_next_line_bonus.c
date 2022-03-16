@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 00:49:12 by dateixei          #+#    #+#             */
-/*   Updated: 2022/03/15 23:27:24 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/03/16 00:24:42 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,10 +94,9 @@ char	*ft_next_line(char	*buffer)
 
 char	*get_next_line(int fd)
 {
-	static char	*buffer; //Buffer to keep
-	char		*line; //Line to return
+	static char	*buffer;
+	char		*line;
 
-	//Basic check
 	if (fd < 0 || read(fd, 0, 0) < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	buffer = ft_read_file(fd, buffer);
@@ -107,4 +106,3 @@ char	*get_next_line(int fd)
 	buffer = ft_next_line(buffer);
 	return (line);
 }
-some updades

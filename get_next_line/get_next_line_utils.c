@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 01:34:39 by dateixei          #+#    #+#             */
-/*   Updated: 2022/03/02 23:56:23 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/03/16 00:24:12 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	size_t	size;
 	size_t	i;
 	size_t	j;
-	
+
 	size = ft_strlen(s1) + ft_strlen(s2);
 	join = (char *)malloc((size + 1) * sizeof(char));
 	if (!s1 || !s2 || !join)
