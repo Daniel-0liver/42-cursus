@@ -15,10 +15,12 @@ int main(int argc, char **argv) {
 	char *get;
 
 	fd = open(argv[1], O_RDONLY);
-	while (get = get_next_line(fd))
-	{
-		printf("%s", get);
-	}
+	get = get_next_line(fd);
+	printf("First test: %s\n", get);
+	close(fd);
+	fd = open(argv[2], O_RDONLY);
+	get = get_next_line(fd);
+	printf("Second test: %s", get);
 	// i = 0;
 	// ret = read(fd, buff, BUFFER_SIZE);
 	// // while (buff[i])
