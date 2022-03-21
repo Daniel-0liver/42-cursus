@@ -1,23 +1,27 @@
+#include "ft_printf.h"
+#include "libft.h"
 #include <stdarg.h>
 #include <stdio.h>
 
-int add(int args, ...)
+int	ft_printf(const char *str, ...)
 {
-	va_list ap;
+	int	num_args; 
+	int	i;
+	va_list args;
 
-	va_start(ap, args);
-
-	int i = 0, sum = 0;
-	for (i = 0; i < args; i++)
-		sum += va_arg(ap, int);
-
-	va_end(ap);
-	return (sum);
+	num_args = ft_strlen(str);
+	va_start(args, str);
+	i = 0;
+	while (str[i])
+	{
+		ft_putchar_fd(str[i], 1);
+	}
+	va_end(args);
+	return 0;
 }
 
 int main(void)
 {
-	printf("Add1 = %d\n", add(3, 1, 2, 3));
-	printf("Add2 = %d\n", add(6, 10, 20, 30, 40, 50, 60));
+	ft_printf("testando");
 	return 0;
-}
+}	
