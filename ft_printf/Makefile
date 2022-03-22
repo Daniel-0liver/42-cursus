@@ -1,3 +1,4 @@
+NAME = libftprintf.a
 SRC = ./src
 INCLUDE = ./include
 LIB = ./lib
