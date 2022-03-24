@@ -1,8 +1,14 @@
 NAME = libftprintf.a
 SRC = ./src
 INCLUDE = ./include
-LIB = ./lib
+LIBFT = ./libft
 OBJ = ./obj
+FLAGS = -Wall -Wextra -Werror
+CC = gcc
 
 all:
-	gcc main.c -I INCLUDE 
+	gcc -c $(libft)/*c -I $(INCLUDE)
+	gcc main.c -I INCLUDE
+
+$(OBJ)/%.o: $(SRC)/%.c $(INCLUDE)/%.h
+	$(CC) $(FLAGS) -c $< -I $(INCLUDE) -o $@

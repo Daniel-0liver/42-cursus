@@ -1,5 +1,8 @@
 #include <stdarg.h>
 #include <stdio.h>
+#include <string.h>
+
+
 
 int	ft_printf(const char *str, ...)
 {
@@ -35,11 +38,11 @@ int	ft_printf(const char *str, ...)
 		i++;
 	}
 	va_end(args);
-	return 0;
+	return (strlen(str));
 }
 
 int main(void)
 {
-	ft_printf("te%c%stan%do", 'c', "test", 5);
+	printf("%d\n%d\n%d\n%i\n%i\n%i\n", -2147483647, 214748364, 2147483647, -2147483647, 214748364, 2147483647);
 	return 0;
 }	
