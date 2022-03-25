@@ -1,48 +1,24 @@
-#include <stdarg.h>
 #include <stdio.h>
-#include <string.h>
 
-
-
-int	ft_printf(const char *str, ...)
+int main()
 {
-	char *str_args;
-	int	num_args; 
-	char char_args;
-	int i;
-	char	c;
-	va_list args;
+	// unsigned int n;
+	unsigned int n2;
+	int *i;
+	char *str;
+	char **str1;
+	unsigned int t;
+	// char test[1000];
+	str = "teste";
 
-	va_start(args, str);
-	i = 0;
-	while (str[i])
-	{
-		c = str[i + 1];
-		if(c == 'd')
-		{
-			num_args = va_arg(args, int);
-			printf("%d\n", num_args);
-		}
-		else if(c == 'c')
-		{
-			char_args = va_arg(args, int);
-			printf("%c\n", char_args);
-		}
-		else if(c == 's')
-		{
-			str_args = va_arg(args, char*);
-			printf("%s\n", str_args);
-		} 
-		else
-			printf("%c", str[i]);
-		i++;
-	}
-	va_end(args);
-	return (strlen(str));
-}
+	t = &str;
 
-int main(void)
-{
-	printf("%d\n%d\n%d\n%i\n%i\n%i\n", -2147483647, 214748364, 2147483647, -2147483647, 214748364, 2147483647);
+	printf("%p\n%u", &str, t);
+	
+
+	// n = -54;
+	// i = -54;
+	// n2 = -55;
+	// printf("%d\n%u\n%u", i, n, n2);
 	return 0;
-}	
+}
