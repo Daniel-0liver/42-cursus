@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 23:51:49 by dateixei          #+#    #+#             */
-/*   Updated: 2022/03/20 23:52:34 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/03/27 23:53:11 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int ft_printf(const char *, ...)
 {
-	
+	//starting the printf
 }
