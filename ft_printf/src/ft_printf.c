@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 23:51:49 by dateixei          #+#    #+#             */
-/*   Updated: 2022/04/02 12:34:51 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/04/02 12:43:02 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,9 @@ int	ft_printf_d(int d)
 {
 	int		lenght;
 	
-	lenght = strlen(d);
-	write(1, &d, )
+	lenght = 1;
+	printf("%d\n", d);
+	return (lenght);
 }
 
 int	ft_check_arg(va_list arg, char c)
@@ -30,8 +31,8 @@ int	ft_check_arg(va_list arg, char c)
 
 	lenght = 0;
 	if(c == 'd')
-		ft_printf_d(va_arg(arg, int));
-		
+		lenght = ft_printf_d(va_arg(arg, int));
+	return (lenght);
 }
 
 int ft_printf(const char *str, ...)
@@ -49,8 +50,7 @@ int ft_printf(const char *str, ...)
 		c = str[i + 1];
 		if (str[i] == '%')
 		{
-			printf("test\n");
-			lenght++;
+			lenght = ft_check_arg(arg, c);
 			i++;
 		}
 		else
@@ -65,7 +65,9 @@ int main()
 {
 	int i;
 
-	i = ft_printf("%as%a%a");
-	printf("\n%d", i);
+	i = 10;
+
+	i = ft_printf("%d", i);
+	printf("%d", i);
 	return 0;
 }
