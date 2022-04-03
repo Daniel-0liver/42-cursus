@@ -7,7 +7,7 @@ int main()
 
 	i = 1000;
 
-	i = ft_printf("vzxvc%dc\nvz%%asdfas", i);
+	i = ft_printf("%s\nasdkja\n%s\n%s\n%s\n%c", "123456789", "testando", "another test", "final test str", 'd');
 	printf("\n%d", i);
 	return 0;
 }
