@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 03:10:51 by dateixei          #+#    #+#             */
-/*   Updated: 2022/04/03 03:15:15 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/04/03 03:27:54 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,3 +22,4 @@ int	ft_check_lenght_int(int d)
 	free(str);
 	return (lenght);
 }
+
