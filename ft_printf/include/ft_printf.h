@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 23:52:57 by dateixei          #+#    #+#             */
-/*   Updated: 2022/04/03 03:03:05 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/04/03 03:15:26 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,6 @@
 int ft_printf(const char *str, ...);
 int	ft_print_d(int d);
 int	ft_print_c(char c);
+int	ft_check_lenght_int(int d);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 23:51:49 by dateixei          #+#    #+#             */
-/*   Updated: 2022/04/03 03:04:33 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/04/03 03:19:04 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int ft_printf(const char *str, ...)
 		c = str[i + 1];
 		if (str[i] == '%')
 		{
-			lenght = ft_check_arg(arg, c);
+			lenght += ft_check_arg(arg, c);
 			i++;
 		}
 		else
