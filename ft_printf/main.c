@@ -5,9 +5,9 @@ int main()
 {
 	int i;
 
-	i = 10000000;
+	i = 1000;
 
-	i = ft_printf("%d", i);
+	i = ft_printf("vzxvc%dc\nvz%%asdfas", i);
 	printf("\n%d", i);
 	return 0;
 }
