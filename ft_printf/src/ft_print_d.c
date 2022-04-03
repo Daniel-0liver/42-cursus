@@ -1,25 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_print_d.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/20 23:52:57 by dateixei          #+#    #+#             */
-/*   Updated: 2022/04/03 03:03:05 by dateixei         ###   ########.fr       */
+/*   Created: 2022/04/03 03:00:04 by dateixei          #+#    #+#             */
+/*   Updated: 2022/04/03 03:03:30 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
-# include "libft.h"
-#include <stdio.h>
-#include <unistd.h>
-#include <stdarg.h>
-#include <string.h>
+#include "ft_printf.h"
 
-int ft_printf(const char *str, ...);
-int	ft_print_d(int d);
-int	ft_print_c(char c);
-
-#endif
+int	ft_print_d(int d)
+{
+	int		lenght;
+	
+	lenght = 1;
+	ft_putnbr_fd(d, 1);
+	return (lenght);
+}

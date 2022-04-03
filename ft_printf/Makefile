@@ -12,3 +12,6 @@ all:
 
 $(OBJ)/%.o: $(SRC)/%.c $(INCLUDE)/%.h
 	$(CC) $(FLAGS) -c $< -I $(INCLUDE) -o $@
+
+run:
+	@gcc ./src/*.c ./libft/*.c main.c -I ./include -o main && ./main
