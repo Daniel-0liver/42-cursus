@@ -7,7 +7,9 @@ int main()
 	char *str;
 
 	str = "teste";
-	i = ft_printf("%p\n%d\n%i\n%c\n%s\n%%adfasAAFDS", &str, 546, 789, 'a', "test");
-	printf("\ni == %d\n%p", i, &str);
+	i = ft_printf("%p\n%d\n%i\n%c\n%s\n%%adfasAAFDS\n", &str, 546, 789, 'a', "test");
+	printf("%d\n", i);
+	i = printf("%p\n%d\n%i\n%c\n%s\n%%adfasAAFDS\n", &str, 546, 789, 'a', "test");
+	printf("%d", i);
 	return 0;
 }
