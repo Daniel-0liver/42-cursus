@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_d.c                                       :+:      :+:    :+:   */
+/*   ft_print_d_i.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 03:00:04 by dateixei          #+#    #+#             */
-/*   Updated: 2022/04/03 03:18:06 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/04/03 16:35:22 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_d(int d)
+int	ft_print_d_i(int d)
 {
 	ft_putnbr_fd(d, 1);
 	return (ft_check_lenght_int(d));

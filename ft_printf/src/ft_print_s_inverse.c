@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_p.c                                       :+:      :+:    :+:   */
+/*   ft_print_s_inverse.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/03 16:00:44 by dateixei          #+#    #+#             */
-/*   Updated: 2022/04/04 01:38:29 by dateixei         ###   ########.fr       */
+/*   Created: 2022/04/04 01:31:51 by dateixei          #+#    #+#             */
+/*   Updated: 2022/04/04 01:37:59 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_p(unsigned long d)
+int	ft_print_s_inverse(char *str)
 {
-	int		lenght;
-	char	*str;
+	int	lenght;
+	int	index;
 
-	str = (char*)malloc(16 * sizeof(char));
-	str = ft_decimal_to_hexadecimal(d, str);
-	write(1, "0x", 2);
-	lenght = 2;
-	lenght += ft_print_s_inverse(str);
-	free(str);
+	index = ft_strlen(str);
+	lenght = index;
+	while (index-- >= 0)
+		ft_putchar_fd(str[index], 1);
 	return (lenght);
 }

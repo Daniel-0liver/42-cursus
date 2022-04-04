@@ -4,10 +4,10 @@
 int main()
 {
 	int i;
+	char *str;
 
-	i = 1000;
-
-	i = ft_printf("%s\nasdkja\n%s\n%s\n%s\n%c", "123456789", "testando", "another test", "final test str", 'd');
-	printf("\n%d", i);
+	str = "teste";
+	i = ft_printf("%p\n%d\n%i\n%c\n%s\n%%adfasAAFDS", &str, 546, 789, 'a', "test");
+	printf("\ni == %d\n%p", i, &str);
 	return 0;
 }
