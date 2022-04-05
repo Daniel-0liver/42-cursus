@@ -1,21 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/05 16:59:24 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/05 17:01:46 by dateixei         ###   ########.fr       */
+/*   Created: 2021/10/18 15:47:53 by dateixei          #+#    #+#             */
+/*   Updated: 2021/12/07 01:17:34 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Outputs the character ’c’ to the given file
-// descriptor.
+// isalpha() checks  for an alphabetic character; in the standard "C" locale, 
+// it is equivalent to (isupper(c) || is‐
+// lower(c)).  In some locales, there may be additional characters for  which  
+// isalpha()  is  true—letters
+// which are neither uppercase nor lowercase.
 
-void	ft_putchar_fd(char c, int fd)
+int	ft_isalpha(int c)
 {
-	write(fd, &c, 1);
+	if (((c >= 'A' && c <= 'Z') || (c
+				>= 'a' && c <= 'z')))
+	{
+		return (1);
+	}
+	else
+		return (0);
 }

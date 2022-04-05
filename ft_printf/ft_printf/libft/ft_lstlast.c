@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/05 16:59:24 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/05 17:01:46 by dateixei         ###   ########.fr       */
+/*   Created: 2021/12/05 23:06:40 by dateixei          #+#    #+#             */
+/*   Updated: 2021/12/05 23:13:49 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Outputs the character ’c’ to the given file
-// descriptor.
+// Returns the last element of the list.
 
-void	ft_putchar_fd(char c, int fd)
+t_list	*ft_lstlast(t_list *lst)
 {
-	write(fd, &c, 1);
+	while (lst && lst->next)
+	{
+		lst = lst->next;
+	}
+	return (lst);
 }

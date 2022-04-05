@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_check_lenght_int.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/05 16:59:24 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/05 17:01:46 by dateixei         ###   ########.fr       */
+/*   Created: 2022/04/03 03:10:51 by dateixei          #+#    #+#             */
+/*   Updated: 2022/04/03 03:27:54 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-// Outputs the character ’c’ to the given file
-// descriptor.
-
-void	ft_putchar_fd(char c, int fd)
+int	ft_check_lenght_int(int d)
 {
-	write(fd, &c, 1);
+	int		lenght;
+	char	*str;
+
+	str = ft_itoa(d);
+	lenght = ft_strlen(str);
+	free(str);
+	return (lenght);
 }
+

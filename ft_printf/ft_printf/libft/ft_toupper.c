@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/05 16:59:24 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/05 17:01:46 by dateixei         ###   ########.fr       */
+/*   Created: 2021/11/22 01:51:47 by dateixei          #+#    #+#             */
+/*   Updated: 2021/12/07 01:35:59 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Outputs the character ’c’ to the given file
-// descriptor.
+// If  c is a lowercase letter, toupper() returns its uppercase 
+// equivalent, if an uppercase representation exists in the 
+// current locale.  Otherwise, it returns c.
 
-void	ft_putchar_fd(char c, int fd)
+int	ft_toupper(int c)
 {
-	write(fd, &c, 1);
+	if (c >= 'a' && c <= 'z')
+		c -= 32;
+	return (c);
 }

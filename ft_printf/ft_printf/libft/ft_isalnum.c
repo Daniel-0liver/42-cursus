@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/05 16:59:24 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/05 17:01:46 by dateixei         ###   ########.fr       */
+/*   Created: 2021/10/18 17:23:28 by dateixei          #+#    #+#             */
+/*   Updated: 2021/12/07 01:15:45 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Outputs the character ’c’ to the given file
-// descriptor.
+// Return 0 if the char isn't alphamumeric and 1 if is.
 
-void	ft_putchar_fd(char c, int fd)
+int	ft_isalnum(int c)
 {
-	write(fd, &c, 1);
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c
+			<= 'z') || (c >= '0' && c <= '9'))
+	{
+		return (1);
+	}
+	else
+		return (0);
 }

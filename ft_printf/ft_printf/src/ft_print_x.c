@@ -1,21 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_print_x.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/05 16:59:24 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/05 17:01:46 by dateixei         ###   ########.fr       */
+/*   Created: 2022/04/04 01:57:58 by dateixei          #+#    #+#             */
+/*   Updated: 2022/04/05 19:46:10 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-// Outputs the character ’c’ to the given file
-// descriptor.
-
-void	ft_putchar_fd(char c, int fd)
+int	ft_print_x(int d, char c)
 {
-	write(fd, &c, 1);
+	int		lenght;
+	char	*str;
+
+	str = (char*)malloc(16 * sizeof(char));
+	lenght = ft_decimal_to_hexadecimal(d, str, 0);
+	str[lenght] = 0;
+	if(c == 'x')
+		lenght = ft_print_s(str);
+	else
+	{
+		lenght = ft_strlen(str);
+		while (lenght-- > 0)
+			str[lenght] = ft_toupper(str[lenght]);
+		lenght = ft_print_s(str);
+	}
+	free(str);
+	str = NULL;
+	return (lenght);
 }
