@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 01:57:58 by dateixei          #+#    #+#             */
-/*   Updated: 2022/04/05 00:03:08 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/04/05 19:46:10 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ int	ft_print_x(int d, char c)
 	else
 	{
 		lenght = ft_strlen(str);
-		while (lenght > 0)
-			str[--lenght] = ft_toupper(str[lenght]);
+		while (lenght-- > 0)
+			str[lenght] = ft_toupper(str[lenght]);
 		lenght = ft_print_s(str);
 	}
 	free(str);

@@ -7,9 +7,9 @@ int main()
 	char *str;
 
 	str = "teste";
-	i = ft_printf("%x\n", 123);
+	i = ft_printf("%u\n", -645123);
 	printf("%d\n", i);
-	i = printf("%x\n", 123);
+	i = printf("%u\n", -645123);
 	printf("%d", i);
 	return 0;
 }
