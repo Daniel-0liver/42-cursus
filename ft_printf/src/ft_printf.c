@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 23:51:49 by dateixei          #+#    #+#             */
-/*   Updated: 2022/04/03 22:59:50 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/04/05 00:07:56 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ int	ft_check_arg(va_list arg, char c)
 		lenght = ft_print_p(va_arg(arg, unsigned long));
 	if(c == 'd' || c == 'i')
 		lenght = ft_print_d_i(va_arg(arg, int));
+	if(c == 'x' || 'X')
+		lenght = ft_print_x(va_arg(arg, int), c);
 	if(c == '%')
 		ft_putchar_fd('%', 1);
 	return (lenght);

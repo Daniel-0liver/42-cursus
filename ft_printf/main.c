@@ -7,9 +7,9 @@ int main()
 	char *str;
 
 	str = "teste";
-	i = ft_printf("%p\n%d\n%i\n%c\n%s\n%%adfasAAFDS\n", &str, 546, 789, 'a', "test");
+	i = ft_printf("%x\n", 123);
 	printf("%d\n", i);
-	i = printf("%p\n%d\n%i\n%c\n%s\n%%adfasAAFDS\n", &str, 546, 789, 'a', "test");
+	i = printf("%x\n", 123);
 	printf("%d", i);
 	return 0;
 }
