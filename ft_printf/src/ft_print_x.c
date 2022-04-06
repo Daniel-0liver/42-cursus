@@ -6,30 +6,19 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 01:57:58 by dateixei          #+#    #+#             */
-/*   Updated: 2022/04/05 21:38:40 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/04/07 00:48:38 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_x(int d, char c)
+int	ft_print_x(unsigned int d, char c)
 {
 	int		lenght;
-	char	*str;
-
-	str = (char*)malloc(16 * sizeof(char));
-	lenght = ft_decimal_to_hexadecimal(d, str, 0);
-	str[lenght] = 0;
-	if(c == 'x')
-		lenght = ft_print_s(str);
-	else
-	{
-		lenght = ft_strlen(str);
-		while (lenght-- > 0)
-			str[lenght] = ft_toupper(str[lenght]);
-		lenght = ft_print_s(str);
-	}
-	free(str);
-	str = NULL;
+	
+	if (!d)
+		return (write(1, "0", sizeof(char) * 1));
+	lenght = ft_decimal_to_hexadecimal(d, 0, c);
+	c = c + 1;
 	return (lenght);
 }

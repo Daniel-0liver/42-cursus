@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 23:51:49 by dateixei          #+#    #+#             */
-/*   Updated: 2022/04/05 20:37:04 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/04/07 00:27:50 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,3 +59,15 @@ int ft_printf(const char *str, ...)
 	va_end(arg);
 	return (lenght);
 }
+
+// int main()
+// {
+// 	int i;
+
+// 	i = printf("%p\n", 0);
+// 	printf("%d\n", i);
+// 	i = ft_printf("%p\n", 0);
+// 	printf("%d\n", i);
+	
+// 	return 0;
+// }
