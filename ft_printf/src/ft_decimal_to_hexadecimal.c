@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 20:26:27 by dateixei          #+#    #+#             */
-/*   Updated: 2022/04/07 00:50:27 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/04/07 20:52:29 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,3 @@ int	ft_decimal_to_hexadecimal(unsigned long d, int index, char x)
 	index += 1;
 	return (index);
 }
-
-
