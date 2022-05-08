@@ -9,7 +9,7 @@ LIBFT 		= ./libft/libft.a
 LIBFTPRINTF	= ${LIB_PATH}/ft_printf.h
 LIBS 		= -lftprintf
 
-CC 			= clang
+CC 			= gcc
 
 FLAGS 		= -Wall -Werror -Wextra
 
@@ -30,34 +30,32 @@ SRCS 		= ${SRCS_PATH}/ft_printf.c			\
 			
 OBJS 		= $(SRCS:.c=.o)
 
-all:		${NAME}
-
-${NAME}: 	${OBJS} ${LIBFT}
+all:		${LIBFT} ${NAME}
+${NAME}: 	${OBJS} 
 		@echo "\n$(NAME): $(GREEN)$(NAME) was created$(RESET)"
-		ar -rcs ${NAME} ${OBJS}
+		@ar -rcs ${NAME} ${OBJS}
 		@echo
 
 ${LIBFT}:
 		@echo
-		make bonus -C libft
-		cp ${LIBFT} ${NAME}
+		@make -C libft
+		@cp ${LIBFT} ${NAME}
 
 .c.o:
-		@echo "\n$(NAME): $(GREEN)object files were created$(RESET)"
-		${CC} -c ${FLAGS} $< -o ${<:.c=.o} ${INCLUDE}
+		@${CC} -c ${FLAGS} $< -o ${<:.c=.o} ${INCLUDE}
 
 clean:
 		make clean -C libft
 		@echo "\n$(NAME): $(RED)object files were deleted$(RESET)"
-		${REMOVE} ${OBJS}
+		@${REMOVE} ${OBJS}
 		@echo
 
 fclean:
 		make fclean -C libft
 		@echo "\n$(NAME): $(RED)object files were deleted$(RESET)"
-		${REMOVE} ${OBJS}
+		@${REMOVE} ${OBJS}
 		@echo "\n$(NAME): $(RED)$(NAME) was deleted$(RESET)"
-		${REMOVE} ${NAME}
+		@${REMOVE} ${NAME}
 		@echo
 
 re :		fclean all
