@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 00:49:12 by dateixei          #+#    #+#             */
-/*   Updated: 2022/03/16 00:24:42 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/04/19 00:12:26 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_read_file(int fd, char *buffer)
 			free(buffer_read);
 			return (NULL);
 		}
-		buffer_read[bytes_read] = 0;
+		buffer_read[bytes_read] = '\0';
 		buffer = ft_join_and_free(buffer, buffer_read);
 		if (ft_strchr(buffer, '\n'))
 			break ;

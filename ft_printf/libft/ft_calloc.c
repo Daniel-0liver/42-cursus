@@ -6,7 +6,7 @@
 /*   By: dateixei <dateixei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 20:37:24 by dateixei          #+#    #+#             */
-/*   Updated: 2021/12/07 01:14:37 by dateixei         ###   ########.fr       */
+/*   Updated: 2022/05/09 01:38:29 by dateixei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,18 @@
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*allocation;
+	char	*allocation_zero;
+	int		full_size;
 
-	allocation = malloc(nmemb * size);
+	full_size = nmemb * size;
+	if (nmemb != 0 && (full_size / nmemb) != size)
+		return (NULL);
+	allocation = malloc(full_size);
+	allocation_zero = allocation;
+	while (full_size--)
+		*allocation_zero++ = (char)0;
 	if (!allocation)
 		return (0);
-	ft_bzero(allocation, (nmemb * size));
 	return (allocation);
 }
 
