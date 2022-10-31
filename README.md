@@ -1,2 +1,2 @@
 # 42-cursus
-Backup from my 42 projects 
+Backup from my 42 projects.
